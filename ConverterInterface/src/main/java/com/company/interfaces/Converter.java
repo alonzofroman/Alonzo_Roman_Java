@@ -1,8 +1,8 @@
 package com.company.interfaces;
 
-public interface ConverterIf {
+public interface Converter {
     public String convertMonth(int monthNumber);
-    
-    public String converDay(int dayNumber);
+
+    public String convertDay(int dayNumber);
 
 }
