@@ -31,6 +31,8 @@ public class ConverterSwitch implements Converter {
             break;
             case 12: month = "December";
             break;
+            default: month = "No month found";
+            break;
         }
         System.out.println(month);
         return month;
@@ -52,7 +54,9 @@ public class ConverterSwitch implements Converter {
             case 6: day = "Friday";
             break;
             case 7: day = "Saturday";
-            break; 
+            break;
+            default: day = "No day found";
+            break;
         }
         System.out.println(day);
         return day;
