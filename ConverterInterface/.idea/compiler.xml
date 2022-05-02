@@ -9,5 +9,8 @@
         <module name="ConverterInterface" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ConverterInterface" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
