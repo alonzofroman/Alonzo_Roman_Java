@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CalculatorObject" />
+        <module name="IceCreamClassDesign" />
         <module name="ConverterInterface" />
       </profile>
     </annotationProcessing>
