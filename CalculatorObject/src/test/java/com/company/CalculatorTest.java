@@ -16,6 +16,7 @@ public class CalculatorTest {
     @Test
     public void shouldAddTwoIntegers() {
         int actualResult = calc.add(1, 1);
+        System.out.println("1+1=" + calc.add(1,1));
         int expectedResult = 2;
         assertEquals(expectedResult, actualResult);
     }
@@ -23,6 +24,7 @@ public class CalculatorTest {
     @Test
     public void shouldSubtractTwoIntegers() {
         int actualResult = calc.subtract(23, 52);
+        System.out.println("23-52=" + calc.subtract(23, 52));
         int expectedResult = -29;
         assertEquals(expectedResult, actualResult);
     }
@@ -30,6 +32,7 @@ public class CalculatorTest {
     @Test
     public void shouldMultiplyTwoIntegers() {
         int actualResult = calc.multiply(34, 2);
+        System.out.println("34 * 2=" + calc.multiply(34, 2));
         int expectedResult = 68;
         assertEquals(expectedResult, actualResult);
     }
@@ -37,6 +40,7 @@ public class CalculatorTest {
     @Test
     public void shouldDivideTwoIntegers() {
         int actualResult = calc.divide(12, 3);
+        System.out.println("12/3=" + calc.divide(12,3));
         int expectedResult = 4;
         assertEquals(expectedResult, actualResult);
     }
@@ -44,6 +48,7 @@ public class CalculatorTest {
     @Test
     public void shouldAddTwoDoubles() {
         double actualResult = calc.add(3.4, 2.3);
+        System.out.println("3.4+2.3=" + calc.add(3.4,2.3));
         double expectedResult = 5.7;
         assertEquals(expectedResult, actualResult, 0.2);
     }
@@ -51,6 +56,7 @@ public class CalculatorTest {
     @Test
     public void shouldSubtractTwoDoubles() {
         double actualResult = calc.subtract(5.5, 0.5);
+        System.out.println("5.5-0.5=" + calc.subtract(5.5, 0.5));
         double expectedResult = 5;
         assertEquals(expectedResult, actualResult, 0.2);
     }
@@ -58,6 +64,7 @@ public class CalculatorTest {
     @Test
     public void shouldMultiplyTwoDoubles() {
         double actualResult = calc.multiply(6.7, 4.4);
+        System.out.println("6.7*4.4=" + calc.multiply(6.7,4.4));
         double expectedResult = 29.48;
         assertEquals(expectedResult, actualResult, 0.2);
     }
@@ -65,6 +72,7 @@ public class CalculatorTest {
     @Test
     public void shouldDivideTwoDoubles() {
         double actualResult = calc.divide(10.8, 2.2);
+        System.out.println("10.8/2.2= " + calc.divide(10.8,2.2));
         double expectedResult = 4.909;
         assertEquals(expectedResult, actualResult, 0.2);
     }
