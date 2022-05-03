@@ -3,6 +3,7 @@ package com.company.factory;
 import java.util.List;
 
 public class IceCream {
+    private List<String> ingredients;
     private String flavor;
     private double salePrice;
     private double productionCost;
@@ -13,7 +14,7 @@ public class IceCream {
         this.salePrice = salePrice;
         this.productionCost = productionCost;
         this.productionTime = productionTime;
-        Ingredients = ingredients;
+        this.ingredients = ingredients;
     }
 
     public String getFlavor() {
