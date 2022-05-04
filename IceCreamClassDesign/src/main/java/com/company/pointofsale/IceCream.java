@@ -34,4 +34,9 @@ public class IceCream {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+    public int MakeASale(int a) {
+        return quantity - a;
+    }
+
 }
