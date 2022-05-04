@@ -1,4 +1,5 @@
 package com.company;
 
-public class Constable {
+public class Constable extends Character {
+    
 }

@@ -2,6 +2,7 @@ package com.company;
 
 public class Farmer extends Character {
 
+
     protected boolean harvesting;
     protected boolean plowing;
 
@@ -18,5 +19,45 @@ public class Farmer extends Character {
         this.plowing = false;
     }
 
+    public Farmer() {
 
+    }
+
+    public boolean isHarvesting() {
+        return harvesting;
+    }
+
+    public void setHarvesting(boolean harvesting) {
+        this.harvesting = harvesting;
+    }
+
+    public boolean isPlowing() {
+        return plowing;
+    }
+
+    public void setPlowing(boolean plowing) {
+        this.plowing = plowing;
+    }
+
+
+//   Methods and abilities
+    public void attackACharacter() {
+
+    }
+
+    public void startHarvesting() {
+        setHarvesting(true);
+    }
+
+    public void stopHarvesting() {
+        setHarvesting(false);
+    }
+
+    public void startPlowing() {
+        setPlowing(true);
+    }
+
+    public void stopPlowing() {
+        setPlowing(false);
+    }
 }

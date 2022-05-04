@@ -10,6 +10,7 @@ public abstract class Character {
     protected boolean running;
     protected boolean arrested;
 
+
     public String getName() {
         return name;
     }
