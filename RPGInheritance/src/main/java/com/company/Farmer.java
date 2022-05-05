@@ -13,6 +13,7 @@ public class Farmer extends Character {
         this.stamina = 75;
         this.speed = 10;
         this.attackPower = 1;
+        this.shieldStrength = 0;
         this.running = false;
         this.arrested = false;
         this.harvesting = false;
@@ -59,5 +60,21 @@ public class Farmer extends Character {
 
     public void stopPlowing() {
         setPlowing(false);
+    }
+
+    @Override
+    public String toString() {
+        return "Farmer{" +
+                "harvesting=" + harvesting +
+                ", plowing=" + plowing +
+                ", name='" + name + '\'' +
+                ", strength=" + strength +
+                ", health=" + health +
+                ", stamina=" + stamina +
+                ", speed=" + speed +
+                ", attackPower=" + attackPower +
+                ", running=" + running +
+                ", arrested=" + arrested +
+                '}';
     }
 }

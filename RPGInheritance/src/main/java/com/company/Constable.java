@@ -11,6 +11,7 @@ public class Constable extends Character {
         this.stamina = 60;
         this.speed = 20;
         this.attackPower = 5;
+        this.shieldStrength = 0;
         this.running = false;
         this.arrested = false;
         this.jurisdiction = jurisdiction;
@@ -28,5 +29,18 @@ public class Constable extends Character {
         this.jurisdiction = jurisdiction;
     }
 
-
+    @Override
+    public String toString() {
+        return "Constable{" +
+                "jurisdiction='" + jurisdiction + '\'' +
+                ", name='" + name + '\'' +
+                ", strength=" + strength +
+                ", health=" + health +
+                ", stamina=" + stamina +
+                ", speed=" + speed +
+                ", attackPower=" + attackPower +
+                ", running=" + running +
+                ", arrested=" + arrested +
+                '}';
+    }
 }

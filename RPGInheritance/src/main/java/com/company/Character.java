@@ -10,6 +10,15 @@ public abstract class Character {
     protected boolean running;
     protected boolean arrested;
 
+    protected int shieldStrength;
+
+    public int getShieldStrength() {
+        return shieldStrength;
+    }
+
+    public void setShieldStrength(int shieldStrength) {
+        this.shieldStrength = shieldStrength;
+    }
 
     public String getName() {
         return name;
@@ -73,6 +82,38 @@ public abstract class Character {
 
     public void setArrested(boolean arrested) {
         this.arrested = arrested;
+    }
+
+    public void attackACharacter(Character target) {
+        if (target.getShieldStrength() == 0) {
+            int remainingHealth = target.getHealth() - this.attackPower;
+            target.setHealth(remainingHealth);
+        } else {
+            int remainingShield = target.getShieldStrength() - this.attackPower;
+            target.setShieldStrength(remainingShield);
+        }
+    }
+
+    public boolean catchACharacter(Character target) {
+        if (target.getSpeed() < this.getSpeed()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void startRunning() {
+        if (this.running = true) {
+            int runningSpeed = this.getSpeed() + 10;
+            this.setSpeed(runningSpeed);
+        }
+    }
+
+    public void stopRunning() {
+        if (this.isRunning() == true) {
+            int normalSpeed = this.getSpeed() - 10;
+            this.setSpeed(normalSpeed);
+        }
     }
 
 

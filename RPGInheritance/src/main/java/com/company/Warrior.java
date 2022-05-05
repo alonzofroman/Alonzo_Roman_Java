@@ -1,7 +1,6 @@
 package com.company;
 
 public class Warrior extends Character {
-    protected int shieldStrength;
 
     public Warrior(String name) {
         this.name = name;
@@ -19,11 +18,19 @@ public class Warrior extends Character {
 
     }
 
-    public int getShieldStrength() {
-        return shieldStrength;
-    }
 
-    public void setShieldStrength(int shieldStrength) {
-        this.shieldStrength = shieldStrength;
+    @Override
+    public String toString() {
+        return "Warrior{" +
+                "shieldStrength=" + shieldStrength +
+                ", name='" + name + '\'' +
+                ", strength=" + strength +
+                ", health=" + health +
+                ", stamina=" + stamina +
+                ", speed=" + speed +
+                ", attackPower=" + attackPower +
+                ", running=" + running +
+                ", arrested=" + arrested +
+                '}';
     }
 }
