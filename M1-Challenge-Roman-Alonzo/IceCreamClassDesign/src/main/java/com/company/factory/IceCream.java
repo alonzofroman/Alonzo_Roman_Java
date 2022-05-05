@@ -59,9 +59,13 @@ public class IceCream {
     }
 
 
-
+//Methods
     public double profit() {
         return salePrice - productionCost;
+    }
+
+    public double calculateProductionTimeInSeconds() {
+        return this.productionTime / 60;
     }
 
 

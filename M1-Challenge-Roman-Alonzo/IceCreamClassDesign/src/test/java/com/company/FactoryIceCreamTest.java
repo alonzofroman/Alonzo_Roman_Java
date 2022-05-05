@@ -13,7 +13,7 @@ public class FactoryIceCreamTest {
 
 //    Class declaration
     com.company.factory.IceCream iceCream =
-            new com.company.factory.IceCream("Vanilla Sundae", 5.50, 2.50, 0.50, Collections.singletonList(("Vanilla, Chocolate, Peanuts")));
+            new com.company.factory.IceCream("Vanilla Sundae", 5.50, 2.50, 3000, Collections.singletonList(("Vanilla, Chocolate, Peanuts")));
 
 //    Tests
     @Test
@@ -39,11 +39,11 @@ public class FactoryIceCreamTest {
     }
 
     @Test
-    public void ProductionTimeShouldBeFiftySeconds() {
-        double expectedResult = 0.50;
-        double actualResult = iceCream.getProductionTime();
+    public void productionTimeInSecondsShouldBe50() {
+        double expectedResult = 50;
+        double actualResult = iceCream.calculateProductionTimeInSeconds();
         assertEquals(expectedResult, actualResult, 0.2);
-
     }
+
 
 }

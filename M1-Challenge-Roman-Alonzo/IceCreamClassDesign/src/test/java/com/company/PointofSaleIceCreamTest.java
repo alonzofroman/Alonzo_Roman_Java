@@ -30,4 +30,13 @@ public class PointofSaleIceCreamTest {
         assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void lowStockShouldIncreasePrice() {
+        double expectedResult = 7.50;
+        iceCream.MakeASale(81);
+        iceCream.increasePriceByDemand();
+        double actualResult = iceCream.getPrice();
+        assertEquals(expectedResult, actualResult, 0.2);
+    }
+
 }

@@ -35,8 +35,19 @@ public class IceCream {
         this.quantity = quantity;
     }
 
+
+//    Methods
     public int MakeASale(int a) {
-        return quantity - a;
+        int newQuantity = this.quantity - a;
+        setQuantity(newQuantity);
+        return quantity;
+    }
+
+    public void increasePriceByDemand() {
+        if (this.quantity < 20) {
+            double newPrice = this.price + 2;
+            setPrice(newPrice);
+        }
     }
 
 }
