@@ -24,5 +24,5 @@ public class Constable extends Character {
         this.jurisdiction = jurisdiction;
     }
 
-    
+
 }
