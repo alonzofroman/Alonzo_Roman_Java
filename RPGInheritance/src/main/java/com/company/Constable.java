@@ -4,7 +4,7 @@ public class Constable extends Character {
 
     protected String jurisdiction;
 
-    public Constable(String name, int strength, int health, int speed, int attackPower, boolean running, boolean arrested, String jurisdiction) {
+    public Constable(String name, String jurisdiction) {
         this.name = name;
         this.strength = 60;
         this.health = 100;
@@ -14,6 +14,10 @@ public class Constable extends Character {
         this.running = false;
         this.arrested = false;
         this.jurisdiction = jurisdiction;
+    }
+
+    public Constable() {
+
     }
 
     public String getJurisdiction() {
