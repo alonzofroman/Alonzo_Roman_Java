@@ -74,4 +74,6 @@ public abstract class Character {
     public void setArrested(boolean arrested) {
         this.arrested = arrested;
     }
+
+
 }
