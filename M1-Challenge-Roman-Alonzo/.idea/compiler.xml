@@ -10,6 +10,7 @@
         <module name="CalculatorObject" />
         <module name="ConverterInterface" />
         <module name="RPGInheritance" />
+        <module name="CustomerComposition" />
       </profile>
     </annotationProcessing>
   </component>
