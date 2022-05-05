@@ -9,7 +9,6 @@ public class RPGInheritanceTest {
 
     Farmer Bob = new Farmer("Bob");
     Warrior Leorio = new Warrior("Leorio");
-    Warrior Jasmine = new Warrior("Jasmine");
     Constable Stephan = new Constable("Stephan", "Farmer");
 
 
@@ -29,9 +28,9 @@ public class RPGInheritanceTest {
     }
 
     @Test
-    public void characterJasmineShouldHave100ShieldStrength() {
+    public void characterLeorioShouldHave100ShieldStrength() {
         int expectedResult = 100;
-        int actualResult = Jasmine.getShieldStrength();
+        int actualResult = Leorio.getShieldStrength();
         assertEquals(expectedResult, actualResult);
     }
 
@@ -43,18 +42,18 @@ public class RPGInheritanceTest {
     }
 
     @Test
-    public void characterJasmineAttackingBobShouldDo100Damage() {
+    public void characterLeorioAttackingBobShouldDo100Damage() {
         int expectedResult = 0;
-        Jasmine.attackACharacter(Bob);
+        Leorio.attackACharacter(Bob);
         int actualResult = Bob.getHealth();
         assertEquals(expectedResult, actualResult);
     };
 
     @Test
-    public void characterStephanAttackingJasmineShouldLeave95Shield() {
+    public void characterStephanAttackingLeorioShouldLeave95Shield() {
         int expectedResult = 95;
-        Stephan.attackACharacter(Jasmine);
-        int actualResult = Jasmine.getShieldStrength();
+        Stephan.attackACharacter(Leorio);
+        int actualResult = Leorio.getShieldStrength();
         assertEquals(expectedResult, actualResult);
     }
 
@@ -67,11 +66,12 @@ public class RPGInheritanceTest {
     }
 
     @Test
-    public void JasmineShouldCatchStephan() {
+    public void characterJasmineShouldCatchStephan() {
         boolean expectedResult = true;
-        boolean actualResult = Jasmine.catchACharacter(Stephan);
+        boolean actualResult = Leorio.catchACharacter(Stephan);
         assertEquals(expectedResult, actualResult);
     }
+
 
 
 }
